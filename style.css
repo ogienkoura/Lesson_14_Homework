@@ -12,7 +12,7 @@
 }
 
 .container {
-    width: 1170px;
+    width: 100%;
     height: 30px;
     padding-left: 15px;
     padding-right: 15px;
@@ -20,14 +20,15 @@
 }
 
 .row {
+    display: flex;
+    flex-wrap: wrap;
     margin-left: -15px;
     margin-right: -15px;
 }
 
 [class*="col-"] {
-    float: left;
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 15px; 
 }
 
 .row::after, .menu::after {
@@ -36,17 +37,63 @@
     clear: both;
 }
 
-.col-3 {
-    width: 25%;
+/* grid xs */
+.col-xs-1{
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
 }
 
-.col-7 {
-    width: 58.33333%;
+.col-xs-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
 }
 
-.col-2 {
-    width: 16.66667%;
+/* tablet */ 
+@media (min-width:768px) {
+    .container {
+        max-width: 720px;
+    }
+    .col-sm-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+
+    .col-sm-10 {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+
+    /* .hidden-sm {
+        display: none;
+    } */
 }
+
+
+
+/* laptop */ 
+@media (min-width:992px) {
+    .container {
+        max-width: 960px;
+    }
+    .col-md-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+    .col-md-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+}
+
+
+
+/* desktop */ 
+@media (min-width:1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+
 
 .logo_image img{
     padding-top: 5px;
@@ -85,15 +132,14 @@ flex-grow: 1;
     border: 2px solid #565c64;
 }
 
-.col-2 form {
-    width: 195px;
+.search-form {
     height: 30px;
     position: relative;
 }
-
-.col-2 form input {
+  
+.search-form input {
     float: right;
-    width: 195px;
+    width: 100%;
     height: 30px;
     border: 2px solid #565c64;
     border-radius: 3px;
@@ -123,32 +169,27 @@ form button {
     background-position: -15px -15px;
 }
 
-@media(min-width:320px) and (max-width:425px) {
+/* only mobile */
 
-.container{
-    width: 100%;
-    height: 60px;
+@media (max-width:767px) {
+
+.hidden-xs {
+    display: none;
 }
 
-.col-3 {
-    width: 100%;
-    height: 30px;
-}
 
 .logo_image img {
 display: block;
 margin: 0 auto;
+margin-top: -5px;
 }
 
-.col-7 {
-    margin-top: 10px;
-    width: 100%;   
-}
 
 .menu {
     display: flex;
     overflow-x: auto;
     justify-content: start;  
+    margin-top: 5px;
 }
 
 .menu a {
@@ -161,12 +202,5 @@ margin: 0 auto;
 }
 
 
-
-
-.col-2 {
-    visibility: hidden;
 }
-
-}
-
 
