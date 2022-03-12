@@ -70,6 +70,11 @@
         max-width: 16.66667%;
     }
 
+    .col-sm-7 {
+        flex: 0 0 58.33331%;
+        max-width: 58.33331%;
+    }
+
     .col-sm-10 {
         flex: 0 0 83.33333%;
         max-width: 83.33333%;
@@ -182,6 +187,46 @@ form button {
     background-position: -15px -15px;
 }
 
+.slider-header {
+    margin-top: 225px;
+    font-size: 36px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Quattrocento Sans";
+    text-transform: uppercase;
+}
+
+.slider-description {
+    margin-top: 35px;
+    font-size: 16px;
+    color: #ccd0d7;
+    font-weight: 400;
+    font-family: "Open Sans";
+}
+
+.slider-button {
+    margin-top: 40px;
+    padding: 10px 15px;
+    border:2px solid white;
+    border-radius: 5px;
+    background: none;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Quattrocento Sans";
+    text-transform: uppercase;
+    transition: 0.1s;
+}
+
+.slider-button:hover {
+    background-color: #23b7a4;
+}
+
+.slider-button:last-child {
+    margin-left: 10px;
+}
 
 
 /* only mobile */
