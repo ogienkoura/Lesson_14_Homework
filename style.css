@@ -13,7 +13,6 @@
 
 .container {
     width: 100%;
-    height: 30px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;   
@@ -56,7 +55,7 @@
     
     background-image: url(images/slider_background_image.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 1930px 660px;
 }
 
 
@@ -68,6 +67,16 @@
     .col-sm-2 {
         flex: 0 0 16.66667%;
         max-width: 16.66667%;
+    }
+
+    .col-sm-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+
+    .col-sm-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
     }
 
     .col-sm-7 {
@@ -204,8 +213,12 @@ form button {
     font-family: "Open Sans";
 }
 
+.buttons_slider {
+    display: flex;    
+}
+
 .slider-button {
-    margin-top: 40px;
+    margin-top: 45px;
     padding: 10px 15px;
     border:2px solid white;
     border-radius: 5px;
@@ -227,6 +240,71 @@ form button {
 .slider-button:last-child {
     margin-left: 10px;
 }
+
+.find_us {
+    display: flex;
+    flex-direction: row;
+    margin-top: 55px;
+}
+
+.find_us .block {
+    width: 60px;
+    height: 60px;
+    background-color: #c8cdd0;
+    margin-left: 1px;
+    background-position-x: center;
+    background-position-y: center;   
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.find_us .block:hover {
+    background-color: #939799;
+}
+
+.block.facebook {
+    background-image: url(images/facebook_logo.png);  
+}
+
+.block.twitter {
+    background-image: url(images/twitter_logo.png);
+}
+
+.block.google {
+    background-image: url(images/google_logo.png);
+}
+
+.find_us .block:first-child {
+    margin-left: 0px;
+}
+
+.we_are_modest_header {
+    font-size: 36px;    
+    color: #292f36;
+    font-weight: 700;
+    font-family: "Quattrocento Sans";
+    text-transform: uppercase;
+    margin-top: 85px;
+}
+
+.we_are_modest_description {
+    margin-top: 65px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #8d8f92;
+    font-weight: 400;
+    font-family: "Open Sans";
+}
+
+.modest_text_weight {
+    font-size: 16px;
+    line-height: 26px;
+    color: #8d8f92;
+    font-weight: bold;
+    font-family: "Open Sans";
+}
+
+
 
 
 /* only mobile */
@@ -261,6 +339,18 @@ margin-top: -5px;
     color:#ad9c9b;
 }
 
+.slider-header {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.slider-description {
+    text-align: center;
+}
+
+.buttons_slider {
+    justify-content: center;
+}
 
 }
 
