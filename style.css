@@ -69,6 +69,11 @@
         max-width: 16.66667%;
     }
 
+    .col-sm-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
     .col-sm-4 {
         flex: 0 0 33.33333%;
         max-width: 33.33333%;
@@ -274,8 +279,21 @@ form button {
     background-image: url(images/google_logo.png);
 }
 
+.block.ball {
+    background-image: url(images/ball_logo.png);
+}
+
+.block.behance {
+    background-image: url(images/behance_logo.png);
+}
+
 .find_us .block:first-child {
     margin-left: 0px;
+}
+
+.we_are_modest_header_text {
+    display: flex;
+    margin-top: 85px;    
 }
 
 .we_are_modest_header {
@@ -284,7 +302,13 @@ form button {
     font-weight: 700;
     font-family: "Quattrocento Sans";
     text-transform: uppercase;
-    margin-top: 85px;
+    margin-left: 15px;
+}
+
+.grey_block {
+    width: 10px;
+    height: 35px;
+    background-color: #e1e6ea;
 }
 
 .we_are_modest_description {
@@ -304,6 +328,113 @@ form button {
     font-family: "Open Sans";
 }
 
+.what_we_do {
+    display: flex; 
+    margin-top: 35px;   
+}
+
+.what_we_do.dedication {
+    margin-top: 65px;
+}
+
+.what_we_do_block {
+    height: 50px;
+    width: 50px;
+    background-color: #23b7a4;
+    flex-shrink: 0;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Quattrocento Sans";
+}
+
+.what_we_do_description {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 20px;  
+}
+
+.what_we_do_description h1 {
+    font-size: 18px;
+    color: #292f36;
+    font-weight: 700;
+    font-family: "Quattrocento Sans";
+    text-transform: uppercase;
+    margin-top: -2px;
+}
+
+.what_we_do_description p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #8d8f92;
+    font-weight: 400;
+    font-family: "Open Sans";
+    margin-top: 20px;
+}
+
+.divide_line {
+    border-bottom: 1px solid #dde1e4;
+    margin-top: 100px;
+}
+
+/* meet the team section */
+
+.meet_the_team_header_text {
+    display: flex;
+    margin-top: 85px;    
+}
+
+.meet_the_team_header {
+    font-size: 36px;    
+    color: #292f36;
+    font-weight: 700;
+    font-family: "Quattrocento Sans";
+    text-transform: uppercase;
+    margin-left: 15px;
+}
+
+.team_person {
+    margin-top: 65px;
+    transition: 0.1s;
+}
+
+.about_person {
+    height: 75px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #e1e6ea;
+    margin-top: 0;
+    transition: 0.1s;
+}
+
+.team_person img {
+    display: block;
+}
+
+.about_person h1 {
+    font-size: 16px;
+    color: #292f36;
+    font-weight: 700;
+    font-family: "Quattrocento Sans";
+    text-transform: uppercase;
+}
+
+.about_person p {
+    font-size: 14px;
+    color: #8d8f92;
+    font-weight: 400;
+    font-family: "Open Sans";
+    margin-top: 10px;
+}
+
+.team_person:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
 
 
 
