@@ -287,6 +287,10 @@ form button {
     background-image: url(images/behance_logo.png);
 }
 
+.block.linkedin {
+    background-image: url(images/linkedin_logo.png);
+}
+
 .find_us .block:first-child {
     margin-left: 0px;
 }
@@ -397,8 +401,8 @@ form button {
 }
 
 .team_person {
-    margin-top: 65px;
-    transition: 0.1s;
+    margin-top: 65px; 
+    position: relative;
 }
 
 .about_person {
@@ -408,11 +412,13 @@ form button {
     padding-bottom: 20px;
     background-color: #e1e6ea;
     margin-top: 0;
-    transition: 0.1s;
+    transition: 0.5s;
+    width: 263px;
 }
 
 .team_person img {
-    display: block;
+    display: block; 
+    transition: 0.5s;  
 }
 
 .about_person h1 {
@@ -431,12 +437,56 @@ form button {
     margin-top: 10px;
 }
 
-.team_person:hover {
-    cursor: pointer;
-    opacity: 80%;
+.team_person:hover img{
+        opacity: 80%;
 }
 
+.team_person:hover .about_person {
+    background-color: #3a454d;
+}
 
+.team_person:hover .about_person h1 {
+    color: white;
+}
+
+.team_person:hover .about_person p {
+    color: white;
+}
+
+.connect_with_person {
+    font-size: 0px;
+    position: absolute;
+    top: 125px;
+    left: 60px;
+    display: none;
+    transition: 0.5s;
+}
+
+.connect_with_person .block {
+    width: 50px;
+    height: 50px;
+    background-color: #3a454d; 
+    display: inline-block;
+    margin-left: 1px; 
+    transition: 0.5s;
+    cursor: pointer;
+    
+}
+
+.connect_with_person .block:first-child {
+    margin-left: 0px;
+}
+
+.team_person:hover .connect_with_person {
+    display: inline-block;
+    z-index: 1;
+    
+}
+
+.connect_with_person .block:hover {
+    background-color: #4e5a62;
+ 
+}
 
 /* only mobile */
 
