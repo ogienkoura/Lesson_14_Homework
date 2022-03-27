@@ -647,6 +647,10 @@ form button {
     background-color: #3a454d;
 }
 
+.feature_image {
+    margin-top: 20px;
+}
+
 .feature_title {
     font-size: 18px;
     color: #ffffff;
