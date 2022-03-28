@@ -702,12 +702,6 @@ form button {
     font-family: "Open Sans";
 }
 
-
-
-
-
-
-
 .contact_form_container {
     display: flex;
     justify-content: space-between;
@@ -781,6 +775,60 @@ form button {
 .open-button:hover {
     background-color: #20a392;
 }
+
+/* footer */
+
+.footer {
+    background-color: #3a454d;
+    height: 90px;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_text {
+    padding-top: 40px;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Open Sans";
+}
+
+.contact_logos_links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.footer_link {
+    height: 40px;
+    width: 40px;
+    background-position: center;
+    cursor: pointer;
+}
+
+.footer_twitter {
+    background-image: url(images/twitter_footer_icon.png);
+}
+
+.footer_facebook {
+    background-image: url(images/facebook_footer_icon.png);
+}
+
+.footer_skype {
+    background-image: url(images/skype_footer_icon.png);
+}
+
+.footer_behance {
+    background-image: url(images/behance_footer_icon.png);
+}
+
+.footer_linkedin {
+    background-image: url(images/linkedin_footer_icon.png);
+}
+
 
 
 /* only mobile */
