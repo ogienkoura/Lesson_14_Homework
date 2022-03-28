@@ -495,15 +495,60 @@
                         </div>
                     </div>
 
-                   
-
                 </div>
             </div>
+
             <div class="map">
                 <img src="images/map.png" alt="">
             </div>
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-sm-6">
+                        <h1 class="contact_info__title">contact information</h1>
+                        <p class="contact_info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique nec dolor non, ornare sagittis dolor. Nulla vestibulum lacus sed molestie gravida. 
+                            <br>
+                            <br>
+                            <br>
+                        Cras fermentum elit quis magna congue, vel sodales arcu vestibulum. Nunc lobortis dui magna, quis dapibus lacus</p>
+                    </div> 
+                    
+                    <div class="col-sm-6">
+                       
+                        <div class="contact_form_popup" id="contactForm">
+                            <form action="#" class="contact_form_container">
+
+                                <div class="input your_name">
+                                    <label for="name">Your name</label>
+                                    <input type="text" name="name" required>
+                                </div>
+                               
+                                <div class="input your_email">
+                                    <label for="email"><b>Your email</b></label>
+                                    <input type="text" name="email" required>
+                                </div>
+                                
+                                <div class="input your_message">
+                                    <label for="message">Your message</label>
+                                    <textarea name="message" id="" cols="30" rows="10"></textarea>
+                                </div>
+                            </form>
+
+                            <div class="form_btn">
+                                <button class="open-button" onclick="sendForm()">Send message</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
         </section>
 
+
     </main>
+    <script src="app.js"></script>
 </body>
 </html>

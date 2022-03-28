@@ -83,6 +83,12 @@
         flex: 0 0 41.66667%;
         max-width: 41.66667%;
     }
+    
+    .col-sm-6 {
+        flex: 0 0 49.99998%;
+        max-width: 49.99998%;
+    }
+    
 
     .col-sm-7 {
         flex: 0 0 58.33331%;
@@ -673,6 +679,109 @@ form button {
 .map {
     margin-top: 65px;
 }
+
+.contact_form_popup {
+    margin-top: -150px;
+    background-color: white;
+}
+
+.contact_info__title {
+    font-size: 20px;
+    color: #292f36;
+    font-weight: 700;
+    font-family: "Quattrocento Sans";
+    text-transform: uppercase;
+    margin-top: 60px;
+}
+
+.contact_info__text {
+    margin-top: 40px;
+    font-size: 16px;
+    color: #8d8f92;
+    font-weight: 400;
+    font-family: "Open Sans";
+}
+
+
+
+
+
+
+
+.contact_form_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 14px;
+    color: #8d8f92;
+    font-weight: 700;
+    font-family: "Quattrocento Sans";
+    text-transform: uppercase;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.input input {
+    margin-top: 10px;
+    width: 240px;
+    height: 45px;
+    border: none;
+    border-radius: 3px;
+    background-color: #eaeef1;
+}
+
+.input.your_name {
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.input.your_email {
+    padding-top: 30px;
+    padding-right: 30px;
+}
+
+.input.your_message {
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.input textarea {
+    margin-top: 10px;
+    width: 495px;
+    border: none;
+    border-radius: 3px;
+    background-color: #eaeef1;
+    resize: none;
+}
+
+.form_btn {
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.form_btn .open-button {
+    padding: 15px 25px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background: none;
+    background-color: #23b7a4;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Quattrocento Sans";
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.open-button:hover {
+    background-color: #20a392;
+}
+
 
 /* only mobile */
 
