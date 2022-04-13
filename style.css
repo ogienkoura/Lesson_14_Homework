@@ -428,8 +428,12 @@ form button {
 }
 
 .team_person {
-    margin-top: 65px; 
+    width: 263px;
+    /* margin-top: 65px;  */
     position: relative;
+    display: block;
+    margin: 65px  auto;
+    margin-bottom: 0;
 }
 
 .about_person {
@@ -912,6 +916,9 @@ margin-top: -5px;
 .buttons_slider {
     justify-content: center;
 }
+
+/* meet the team */
+
 
 
 
