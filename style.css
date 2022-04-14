@@ -548,9 +548,16 @@ form button {
 }
 
 .our_works {
-    margin-top: 30px;
+    /* margin-top: 30px;
     position: relative;  
+    cursor: pointer; */
+    position: relative;
     cursor: pointer;
+    display: block;
+    margin: 30px auto;
+    margin-bottom: 30px;
+    margin-bottom: 0px;
+    max-width: 460px;
 }
 
 
@@ -892,7 +899,7 @@ margin-top: -5px;
     overflow-x: auto;
     overflow-y: hidden;
     justify-content: start;  
-    margin-top: 5px;
+    margin-top: 20px;
 }
 
 .menu a {
@@ -905,7 +912,7 @@ margin-top: -5px;
 }
 
 .slider-header {
-    margin-top: 50px;
+    margin-top: 90px;
     text-align: center;
 }
 
