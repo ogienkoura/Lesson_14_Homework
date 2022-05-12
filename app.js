@@ -1,28 +1,30 @@
-// function scrollTo(element) {
-//     window.scroll({
-//         left:0,
-//         top: element.offsetTop,
-//         behavior:'smooth'
+// let anchors = document.querySelectorAll('.menu a[href*="#"]');
+
+// for (anchor of anchors) {
+//   if (anchor) {
+//     anchor.addEventListener('click', function(e){
+//       e.preventDefault();
+//       anchorId = this.getAttribute('href');
+//       document.querySelector(anchorId).scrollIntoView({
+//         behavior: 'smooth', block: 'start'
+//       })
 //     })
+//   }
 // }
 
-// let teamButton = document.querySelector ('#team-btn');
-// let teamSection = document.querySelector ('.meet_the_team');
 
-// teamButton.addEventListener('click', function(){
-//     scrollTo(teamSection)
-// })
+const viewSection = document.querySelector(".contact-modal");
 
-let anchors = document.querySelectorAll('.menu a[href*="#"]');
 
-for (anchor of anchors) {
-  if (anchor) {
-    anchor.addEventListener('click', function(e){
-      e.preventDefault();
-      anchorId = this.getAttribute('href');
-      document.querySelector(anchorId).scrollIntoView({
-        behavior: 'smooth', block: 'start'
-      })
-    })
-  }
-}
+window.addEventListener('scroll', function() {
+  viewSection.hidden = (scrollY < this.document.documentElement.scrollHeight / 2);
+})
+
+
+
+
+
+
+
+
+
