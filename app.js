@@ -13,17 +13,48 @@
 // }
 
 
-const viewSection = document.querySelector(".contact-modal");
+const viewModal = document.querySelector(".contact-modal");
+const closeModalBtn = document.querySelector(".button--reset");
+console.log (closeModalBtn);
+
+function openModal () {
+  viewModal.classList.add("show");
+  viewModal.classList.remove("hide");
+}
+
+function closeModal () {
+  viewModal.classList.remove("show");
+  viewModal.classList.add("hide");
+}
+
+closeModalBtn.addEventListener("click", closeModal);
 
 
-window.addEventListener('scroll', function() {
-  viewSection.hidden = (scrollY < this.document.documentElement.scrollHeight / 2);
-})
+function showModalByScroll () {
+  if (window.pageYOffset > document.body.scrollHeight/2) {
+    openModal();
+    window.removeEventListener("scroll", showModalByScroll);
+  }
+}
+
+window.addEventListener("scroll", showModalByScroll);
 
 
 
+//  BURGER MENU
 
 
+const mobileMenu = document.querySelector(".nav-mobile-menu");
+const mainMenu = document.querySelector(".menu");
+
+mobileMenu.addEventListener("click", function () {
+  mobileMenu.classList.toggle("active-menu");
+  if (mobileMenu.classList.contains("active-menu")) {
+    mainMenu.classList.add("active-menu");
+  } else {
+    mainMenu.classList.remove("active-menu");
+  }
+});
 
 
 
