@@ -992,9 +992,9 @@ form button {
     padding-top: 25px;
     padding-right: 25px;
     padding-bottom: 25px;
-    padding-left: 10px;
+    padding-left: 20px;
     flex-direction: column;
-    width: 115px;
+    width: 170px;
   }
 
   .header-mobile {
